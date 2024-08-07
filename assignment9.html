@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div input:not(input[type=submit]) {
+            margin: 5px;
+            padding: 5px;
+            width: 80%;
+            outline: none;
+
+        }
+
+        .main {
+
+            padding: 30px;
+            text-align: left;
+            width: 500px;
+            background-color: lightgray;
+
+
+
+
+
+
+        }
+
+        input[ type=submit] {
+            margin-top: 10px;
+            width: 420px;
+            padding: 10px 30px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+
+
+        }
+
+        .lists {
+            display: none;
+        }
+
+        .drop-down:hover .lists {
+            background-color: lightgray;
+
+            list-style-type: none;
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 30px;
+            margin-bottom: 50px;
+            margin-left: 2px
+        }
+
+
+
+        .c1 {
+            display: block;
+            width: 420px;
+            height: 30px
+        }
+
+        .drop-down1 {
+            background-color: green;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .mains {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+        .drop-down{
+            margin-top: 20px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="mains">
+        <form>
+            <div class="main">
+                <div>
+                    <label for="fname">First Name</label><br>
+
+                    <input type="text" id="fname" placeholder="Your name..">
+
+                </div>
+                <div>
+                    <label for="lname">Last Name</label><br>
+
+                    <input type="text" id="lname" placeholder="your last">
+
+                </div>
+
+                <label for="country">Country</label>
+                <select class="c1" id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+
+
+
+                <div>
+                    <input type="submit">
+
+                </div>
+            </div>
+
+
+
+            <div class="drop-down">
+                <button class="drop-down1">Dropdown</button>
+                <ul class="lists">
+                    <li>Link1</li>
+                    <li>Link2</li>
+                    <li>Link3</li>
+                </ul>
+            </div>
+
+        </form>
+
+
+    </div>
+
+
+    </form>
+    </div>
+
+
+</body>
+
+</html>
